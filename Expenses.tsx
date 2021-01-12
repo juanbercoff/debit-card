@@ -10,9 +10,9 @@ import ExpensesLineChart from './LineChart.tsx'
 
 
 
-const m_names = ['Enero', 'Febrero', 'Marzo', 
-'Abril', 'Mayo', 'Junio', 'Julio', 
-'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre'];
+const m_names = ['January', 'February', 'March', 
+'April', 'May', 'June', 'July', 
+'August', 'September', 'October', 'November', 'December'];
 
 
 
@@ -67,7 +67,7 @@ export default class Expenses extends React.Component {
 					<Appbar.Action icon="magnify" onPress={this._handleSearch} />}
 				</Appbar.Header>
 				<View style={styles.top}>
-					<Text style={styles.totalMonthExpenditureText}>Gastos para el mes de {m_names[this.state.date.getMonth()]}</Text>
+					<Text style={styles.totalMonthExpenditureText}>Expenses for {m_names[this.state.date.getMonth()]}</Text>
 					<Text style={styles.totalMonthExpenditureValue}>${this.totalMonthlyExpenditure(data)}</Text>
 					<ExpensesLineChart res={this.monthLineChart(data)}/>
 					

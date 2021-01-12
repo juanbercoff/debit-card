@@ -2,9 +2,9 @@ import { LineChart } from "react-native-chart-kit";
 import React from 'react';
 import { Dimensions } from 'react-native';
 
-const m_names = ['Enero', 'Febrero', 'Marzo', 
-'Abril', 'Mayo', 'Junio', 'Julio', 
-'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre'];
+const m_names = ['January', 'February', 'March', 
+'April', 'May', 'June', 'July', 
+'August', 'September', 'October', 'November', 'December'];
 
 
 const ExpensesLineChart = ({res}) => (

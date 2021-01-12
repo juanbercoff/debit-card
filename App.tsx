@@ -1,6 +1,6 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import { StyleSheet,  View } from 'react-native';
+import { StyleSheet,  SafeAreaView } from 'react-native';
 import { Provider as PaperProvider, DefaultTheme, Text } from 'react-native-paper';
 import { createMaterialBottomTabNavigator } from '@react-navigation/material-bottom-tabs';
 import { NavigationContainer } from '@react-navigation/native';
@@ -36,33 +36,7 @@ export default function App() {
 
 
 
-const Settings = () => <Text>Recents</Text>;
-
-/*React Paper Implementation
-const BottomNavBar = () => {
-  const [index, setIndex] = React.useState(0)
-  const [routes] = React.useState([
-    { key: 'home', title: 'Home', icon: 'home' },
-    { key: 'expenses', title: 'Expenses', icon: 'chart-line' },
-    { key: 'settings', title: 'Settings', icon: 'account' },
-  ])
-
-  const renderScene = BottomNavigation.SceneMap({
-    home: Home,
-    expenses: Expenses,
-    settings: Settings,
-  });
-
-  return (
-    <BottomNavigation
-      navigationState={{ index, routes }}
-      onIndexChange={setIndex}
-      renderScene={renderScene}
-    />
-  );
-
-}
-*/
+const Settings = () => <Text>Settings</Text>;
 
 const BottomNavBar = () => (
   <Tab.Navigator>

@@ -11,24 +11,24 @@ const Home = () => (
         <View style={styles.homeTop}>
             <Image style={styles.homeTopImage} source={require('./assets/card.png')}/>
             <View style={styles.homeTopTextView}>
-                <Text style={styles.homeTopText}>Hola Juan</Text>
-                <Text style={styles.homeTopText}>Tenes un total pendiente por</Text>
+                <Text style={styles.homeTopText}>Hi Juan</Text>
+                <Text style={styles.homeTopText}>You have a pending total of</Text>
                 <Text style={styles.homeTopOutstanding}>$ 12360</Text>
             </View>
 
         </View>
         <View style={styles.homeBottom}>
             <Card style={styles.homeBottomTop}>
-                <Text>asd</Text>
+                <Text></Text>
             </Card>
             <Card style={styles.homeBottomGenerate}>
-                <Text style={styles.homeBottomText}>Genera tu estado de cuenta</Text>
+                <Text style={styles.homeBottomText}>Generate your account billing statement</Text>
                 <Button>Cancel</Button>
                     <Button>Ok</Button>
             </Card>
             <Card style={styles.mostRecentTransaction}>
-                <Text style={styles.homeBottomText}>Transaccion mas reciente</Text>
-                <Item value={data[9]}/>
+                <Text style={styles.homeBottomText}>Most recent transaccion</Text>
+                
             </Card>
 
         </View>
